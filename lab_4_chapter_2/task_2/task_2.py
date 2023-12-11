@@ -69,5 +69,27 @@ def sum_al_var_2():
     print(total)
 
 
+def zip_matrix():
+    """
+    Сжать массив, удалив из него все элементы, модуль которых находится в интервале [а, b].
+    Освободившиеся в конце массива элементы заполнить нулями.
+    :return: none
+    """
+    lis = [randint(0, 1000) for i in range(10)]
+
+    a = 100
+    b = 400
+    total = 0
+    for i in lis:
+        if a <= i <= b:
+            total += 1
+            lis.remove(i)
+
+    for i in range(total):
+        lis.append(0)
+
+    print(lis)
+
+
 if __name__ == '__main__':
-    sum_al_var_2()
+    zip_matrix()
