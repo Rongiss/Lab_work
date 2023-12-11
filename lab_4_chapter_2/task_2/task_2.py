@@ -75,6 +75,7 @@ def zip_matrix():
     Освободившиеся в конце массива элементы заполнить нулями.
     :return: none
     """
+
     lis = [randint(0, 1000) for i in range(10)]
 
     a = 100
